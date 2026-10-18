@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -24,8 +25,13 @@ public class DevedorController {
     }
 
     @GetMapping
-    public String buscarDevedores(){
-        return devedorRepository.findAll().toString();
+    public List<Devedor> buscarDevedores(){
+        return devedorRepository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Devedor> buscarDevedorPorId(@PathVariable Long id){
+        return devedorRepository.findById(id);
     }
 
     @PostMapping
