@@ -1,4 +1,4 @@
-package com.br.leoscosta.megadoc.model;
+package com.br.leoscosta.megadoc.entity;
 
 import jakarta.persistence.Entity;
 import lombok.Getter;

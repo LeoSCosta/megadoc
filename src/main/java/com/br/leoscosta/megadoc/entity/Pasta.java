@@ -1,9 +1,7 @@
-package com.br.leoscosta.megadoc.model;
+package com.br.leoscosta.megadoc.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.SQLRestriction;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Table

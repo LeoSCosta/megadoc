@@ -1,4 +1,4 @@
-package com.br.leoscosta.megadoc.model;
+package com.br.leoscosta.megadoc.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,7 +11,7 @@ import org.hibernate.annotations.SQLRestriction;
 @NoArgsConstructor
 @ToString(callSuper = true)
 @SQLRestriction("excluido = false")
-public class Devedor extends EntidadeBase{
+public class Devedor extends EntidadeBase {
 
     private String nome;
     private String documento;
